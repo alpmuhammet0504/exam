@@ -51,3 +51,9 @@
 .header-margin-top {
     margin-top: -5rem;
 }
+
+
+.px-10 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
