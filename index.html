@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
 </head>
 <!-- container-1 -->
 <div class="bg-image py-5">
@@ -112,21 +113,13 @@
             </div>
         </div>
         <div class="col-6 text-center pb-5 bg-white text-white">
-            <div class="splide" role="" aria-label="Splide Basic HTML Example">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <a href="img/about-img.png" class="text-decoration-none img-fluid" data-fancybox="gallery"
-                                data-caption="Man">
-                                <img src="img/about-img.png" alt="">
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
+            <a href="img/about-img.png" class="text-decoration-none img-fluid" data-fancybox="gallery" data-caption="">
+                <img src="img/about-img.png" />
+            </a>
         </div>
     </div>
+</div>
+</div>
 </div>
 <!-- container 4 -->
 <div class="container py-5 mt-5">
@@ -270,47 +263,12 @@
 </div>
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var splide = new Splide('.splide', {
-            type: "loop",
-            autoplay: 1,
-            arrows: true,
-            interval: 5e3,
-            pauseOnHover: 0,
-            perMove: 1,
-            perPage: 1,
-            gap: "1.5rem",
-            breakpoints: {
-                767: {
-                    perPage: 1,
-                    perMove: 1,
-                },
-            },
-        });
-        splide.mount();
-
-
-        var splide = new Splide('#second-slider', {
-            type: "loop",
-            autoplay: 1,
-            arrows: 0,
-            interval: 3e3,
-            pauseOnHover: 0,
-            perMove: 1,
-            perPage: 1,
-            gap: "1.5rem",
-        });
-        splide.mount();
-    });
 </script>
-
-</script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/splide.min.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/fancybox.umd.js"></script>
-<script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script>
     Fancybox.bind("[data-fancybox]", {
         'animated': true,
     });
@@ -320,11 +278,6 @@
         once: true,
     });
 </script>
-
-
-
-
-
 </body>
 
 </html>
